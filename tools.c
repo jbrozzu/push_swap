@@ -48,7 +48,6 @@ void	tool3(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 void	tool4(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 {
 	if (return_Tail(p_list_a) < return_Tail_plus_1(p_list_a))
-	{
 		while ((return_Top(p_list_a) > return_Tail(p_list_a))) 
 		{
 			if (*nbr != 0 && trace == 0)
@@ -56,9 +55,7 @@ void	tool4(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 			reverserotate(p_list_a, p_list_b, trace);
 			*nbr += 1;
 		}
-	}
 	else
-	{
 		while ((return_Top(p_list_a) > return_Tail(p_list_a))) 
 		{
 			if (*nbr != 0 && trace == 0)
@@ -66,7 +63,6 @@ void	tool4(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 			rotate(p_list_a, p_list_b, trace);
 			*nbr += 1;
 		}
-	}
 	if (return_Top(p_list_a) > return_Top_moins_1(p_list_a)) 
 	{
 		ft_putchar(' ');
@@ -78,7 +74,6 @@ void	tool4(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 void	tool5(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 {
 	if (return_Tail(p_list_a) < return_Tail_plus_1(p_list_a))
-	{
 		while ((return_Top(p_list_a) > return_Tail(p_list_a))) 
 		{
 			if (*nbr != 0 && trace == 0)
@@ -86,9 +81,7 @@ void	tool5(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 			reverserotate(p_list_a, p_list_b, trace);
 			*nbr += 1;
 		}
-	}
 	else
-	{
 		while ((return_Top(p_list_a) > return_Tail(p_list_a))) 
 		{
 			if (*nbr != 0 && trace == 0)
@@ -96,7 +89,6 @@ void	tool5(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 			rotate(p_list_a, p_list_b, trace);
 			*nbr += 1;
 		}
-	}
 	if (return_Top(p_list_b) < return_Top_moins_1(p_list_b)) 
 	{
 		ft_putchar(' ');

@@ -4,7 +4,7 @@ HEADER
 
 #include "push_swap.h"
 
-int list_displayBT (t_list *p_list)  /* Affichage des ÈlÈments du BOTTOM (NULL) vers TOP   */ 
+int list_displayBT (t_list *p_list)
 {
     if (1)
     {
@@ -27,7 +27,7 @@ int list_displayBT (t_list *p_list)  /* Affichage des ÈlÈments du BOTTOM (NULL
     return(0);
 }
 
-int list_displayBTglobal(int trace, t_list *p_list1, t_list *p_list2)  /* Affichage des éléments du BOTTOM (NULL) vers TOP des deux piles avec un éventuel commentaire  */ 
+int list_displayBTglobal(int trace, t_list *p_list1, t_list *p_list2) 
 {
     if (trace == 0)
         return (0); 
@@ -46,49 +46,4 @@ int list_displayBTglobal(int trace, t_list *p_list1, t_list *p_list2)  /* Affich
         ft_putstr("\n\n");
 	}	
 	return (0);
-}
-
-int return_Top_moins_1(t_list *p_list)  /* Retour Elt TOP */ 
-{
-    if (p_list != NULL)
-    {
-        t_node *p_temp = p_list->p_head->p_next;
-        return(p_temp->data);
-    } 
-    else 
-    	return(-1);
-} 
-
-
-int return_Top(t_list *p_list)  /* Retour Elt TOP */ 
-{
-    if (p_list != NULL)
-    {
-        t_node *p_temp = p_list->p_head;
-        return(p_temp->data);
-    } 
-    else 
-    	return(-1);
-} 
-
-int return_Tail_plus_1(t_list *p_list)  /* Retour Elt TAIL */ 
-{
-    if (p_list != NULL)
-    {
-        t_node *p_temp = p_list->p_tail->p_prev;
-        return(p_temp->data);
-    } 
-    else 
-        return(-1);
-}
-
-int return_Tail(t_list *p_list)  /* Retour Elt TAIL */ 
-{
-    if (p_list != NULL)
-    {
-        t_node *p_temp = p_list->p_tail;
-        return(p_temp->data);
-    } 
-    else 
-        return(-1);
 }

@@ -14,7 +14,8 @@ SRC = 	main.c 			\
 		list_add.c 		\
 		delete_list.c 	\
 		print_list.c 	\
-		fill_list.c
+		fill_list.c 	\
+		return.c
 
 BIN = 	main.o 			\
 		check_args.o 	\
@@ -26,7 +27,8 @@ BIN = 	main.o 			\
 		list_add.o 		\
 		delete_list.o 	\
 		print_list.o 	\
-		fill_list.o
+		fill_list.o 	\
+		return.o
 
 FLAGS = -Wall -Werror -Wextra
 
