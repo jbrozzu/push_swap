@@ -4,7 +4,7 @@ HEADER
 
 #include "push_swap.h"
 
-int list_trie_a (t_list *p_list)  /* Check si list triee   */ 
+int list_trie_a (t_list *p_list)
 {
     int tampon;
     if (p_list != NULL)
@@ -26,7 +26,7 @@ int list_trie_a (t_list *p_list)  /* Check si list triee   */
         return(-1);
 } 
 
-int list_trie_b (t_list *p_list)  /* Check si list triee   */ 
+int list_trie_b (t_list *p_list)
 {
     int tampon;
     if (p_list != NULL)

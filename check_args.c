@@ -67,16 +67,19 @@ int		check_args(int argc, char **argv)
 {
 	if (test_args_nb(argv) == 0)
 	{
+		ft_putstr("ERROR : \n");
 		ft_putstr("Only integer numbers, no character, no float.\n");
 		return (0);
 	}
 	if (test_size(argv) == 0)
 	{
+		ft_putstr("ERROR : \n");
 		ft_putstr("Only integer (between -2147483648 and 2147483647).\n");
 		return (0);
 	}
 	if (test_recurence(argc, argv) == 0)
 	{
+		ft_putstr("ERROR : \n");
 		ft_putstr("No recurrence allowed.\n");
 		return (0);
 	}

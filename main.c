@@ -17,10 +17,7 @@ int		main(int argc, char **argv)
 	if (argc - trace > 2)
 	{
 		if (check_args(argc - trace, argv + trace) == 0)
-		{
-			ft_putstr("ERROR\n");
 			return (0);
-		}
 		p_list_a = *fill_list(argc - trace, argv + trace);
 		if (argc < 7 + trace)
 			push_swap(&p_list_a, trace, &nbr);
