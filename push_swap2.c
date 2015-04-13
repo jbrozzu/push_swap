@@ -9,7 +9,10 @@ int		push_swap2(t_list *p_list_a, int trace, int *nbr)
 	t_list *p_list_b;
 	p_list_b = list_new("B");
 	if (trace == 1)
-		ft_putstr("START : ");
+	{
+		ft_putchar('\n');
+		ft_putstr("\e[1;36mSTART \e[1;33m");
+	}
 	list_displayBTglobal(trace, p_list_a, p_list_b);
 	while (1)
 	{

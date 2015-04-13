@@ -11,7 +11,7 @@ int	push_swap(t_list *p_list_a, int trace, int *nbr)
 	if (trace == 1)
 	{
 		ft_putchar('\n');
-		ft_putstr("START : ");
+		ft_putstr("\e[1;36mSTART \e[1;33m");
 	}
 	list_displayBTglobal(trace, p_list_a, p_list_b);
 	while (1)
@@ -96,11 +96,11 @@ int		tool1(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 		*nbr += 1;
 	}
 	if (trace == 1)
-		ft_putstr("END : ");
+		ft_putstr("\e[1;36mEND \e[1;33m");
 	list_displayBTglobal(trace, p_list_a, p_list_b);
 	if (trace == 1)
 	{
-		ft_putstr("\n TOTAL MOVES : ");
+		ft_putstr("\e[1;31mTOTAL MOVES : ");
 		ft_putnbr(*nbr);
 		ft_putchar('\n');
 	}

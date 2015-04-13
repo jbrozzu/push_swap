@@ -9,10 +9,10 @@ void	tool2(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 	if (*nbr != 0 && trace == 0)
 		ft_putchar(' ');
 	Top_Top (p_list_b, p_list_a, trace);
-	*nbr += 1;
-	ft_putchar(' ');
+	if (*nbr != 0 && trace == 0)
+		ft_putchar(' ');
 	swap(p_list_a, p_list_b, trace);
-	*nbr += 1;
+	*nbr += 2;
 	while ((return_Top(p_list_a) > return_Tail(p_list_a)))
 	{
 		ft_putchar(' ');
@@ -65,7 +65,8 @@ void	tool4(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 		}
 	if (return_Top(p_list_a) > return_Top_moins_1(p_list_a)) 
 	{
-		ft_putchar(' ');
+		if (*nbr != 0 && trace == 0)
+			ft_putchar(' ');
 		swap(p_list_a, p_list_b, trace);
 		*nbr += 1;				
 	}
@@ -91,7 +92,8 @@ void	tool5(t_list *p_list_a, t_list *p_list_b, int trace, int *nbr)
 		}
 	if (return_Top(p_list_b) < return_Top_moins_1(p_list_b)) 
 	{
-		ft_putchar(' ');
+		if (*nbr != 0 && trace == 0)
+			ft_putchar(' ');
 		swap(p_list_b, p_list_a, trace);
 		*nbr += 1;
 	}
